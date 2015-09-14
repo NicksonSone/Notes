@@ -1,0 +1,8 @@
+Procedure to deploy new technology:
+
+Never dive into details first. Estimate the usability: 
+clustering support, functionality, backup support, features, what's better than original solution
+solutions of other company, richnes of online resource
+
+For database:connector, cache, read/write performance, transaction, clustering, sharding(partitioning), ease of upgrade backup
+
