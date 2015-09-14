@@ -1,0 +1,13 @@
+Fresh Installation with Apt
+
+1. download apt configuration script from http://dev.mysql.com/downloads/repo/apt/
+2. install configuration file: sudo dpkg -i /PATH/platform-and-version-specific-package-name.deb
+3. during installation, choose version of server, workbench and connector. Use default options if not sure
+4. update apt repository: shell> sudo apt-get update
+5. install mysql server and client: sudo apt-get install mysql-server 
+
+MySQL Process Manipulation
+
+1. check status: sudo service mysql status
+2. start: sudo service mysql start
+3. stop: sudo service mysql stop
