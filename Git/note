@@ -1,0 +1,5 @@
+Renaming Branch both locally and remotely
+
+rename branch locally: git branch -m old-branch new-branch
+push new branch to server: git push origin new-branch
+delete old branch: git push origin :old-branch 
