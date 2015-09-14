@@ -1,0 +1,87 @@
+===Fresh Installation with Apt===
+
+1. download apt configuration script from http://dev.mysql.com/downloads/repo/apt/
+2. install configuration file: sudo dpkg -i /PATH/platform-and-version-specific-package-name.deb
+3. during installation, choose version of server, workbench and connector. Use default options
+if not sure
+4. update apt repository: shell> sudo apt-get update
+5. install mysql server and client: sudo apt-get install mysql-server 
+
+
+MySQL Process Manipulation
+
+1. check status: sudo service mysql status
+2. start: sudo service mysql start
+3. stop: sudo service mysql stop
+
+
+===Replication Mechanism===
+
+Master records all changes to database in a binary log file. Format of changes is different 
+depending on statements of update. Slaves copy this binary file via network and execute events 
+in log file, applying changes to database.
+
+You cannot configure master to log only certain events. But you can configure slaves to process 
+only certain events that apply to particular table. 
+
+Each slave keeps a record of binary log coordinates: log file name and positiion within which 
+it has read and processed from server. This means each slave can execute a different part of log
+file.
+
+Master and slaves must be configured with a unique ID(using server-id option). In addition, each 
+slave must keep information like the master host name, log file name and position within that file
+These details can be configured from within a MYSQL session using 'CHANGE MASTER TO' statement on 
+the slave.
+
+Note: unique ID for identification of servers in this group
+
+
+===Replication Configuration===
+
+1. Master
+Edit configuration file for master to enable binary logging and set server id.Within the [mysqld] 
+section of the configuration file, add the log-bin and server-id options. (uncomment them out)
+
+1) shut down the server 
+2) add the following options to configuration file
+    [mysqld]
+    log-bin=mysql-bin
+    server-id=1                        server-id must be a positive interger between 1 and (2^32)−1
+3) restart server
+
+Note: for durability and consistency in replication setup using InnoDB transactions, 
+use 'innodb_flush_log_at_trx_commit=1' and 'sync_binlog=1' in configuration file.
+
+2. Slave
+
+1) add options
+    [mysqld]
+    server-id=2
+2) restart server
+
+Note: slave can enable binary logging for bachup or complex replication topology
+
+3. Create Account for Replication on Master
+
+In client shell on master server, issue the following commands:
+CREATE USER 'repl'@'%.mydomain.com' IDENTIFIED BY 'slavepass';
+GRANT REPLICATION SLAVE ON *.* TO 'repl'@'%.mydomain.com';
+
+'%.mydomain.com' is domain of slave
+
+4. Obtaining Replication Master Binary Log Coordinates
+
+If you have existing data on your master that you want to synchronize on your slaves before 
+starting the replication process.
+
+start a session on master
+1) stop processing statements on the master:  
+    FLUSH TABLES WITH READ LOCK;
+
+2) obtain its current binary log coordinates and dump its data: 
+    open a different session and type 'SHOW MASTER STATUS;'
+
+3) if master contains no data, go to 4) . Otherwise, skip to 4)
+
+4) start processing on master 
+
