@@ -1,8 +1,25 @@
 Procedure to deploy new technology:
 
 Never dive into details first. Estimate the usability: 
-clustering support, functionality, backup support, features, what's better than original solution
-solutions of other company, richnes of online resource
+clustering support, 
+functionality,
+backup support, 
+features, 
+what's better than original solution,
+solutions of other company, 
+richnes of online resource(how vibrate the community is)
 
-For database:connector, cache, read/write performance, transaction, clustering, sharding(partitioning), ease of upgrade backup
+For database:
+connector(performance, availability of resources)
+cache, 
+read/write performance, 
+transaction, 
+clustering, 
+sharding(partitioning), 
+ease of upgrade backup
+
+HTTP regulation suggest do not pass parameters in DELETE method.
+
+After model design phase, some models must have some kind of relations to each other. Influence of 
+creation, insertion, update and delete of one model on an other model must be taken into consideration
 
