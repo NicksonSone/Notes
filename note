@@ -36,3 +36,12 @@ Functionality Conflicts
 two versions of api for the same functionality can have substantial impact on data model. If the 
 newer interface perform differently on data, data conflicts and contradicting diplaying rule may 
 occur. This is a very special case for two devices using different sets of api
+
+
+Software Implementation Scheduling
+
+Scheduling should be based on complexity of implementation and related functions, including 
+interaction between database and client side. Data in database usually support creatiion, update,
+query and delete on client side or operation system. Conflicts in data race ought to be fully 
+examined and considered
+
