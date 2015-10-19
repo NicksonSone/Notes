@@ -1,0 +1,28 @@
+Lecture 1
+four major topics: supervised learning, learning theory, unsupervised learning and reinforcement 
+learning.
+
+Applications
+1. Supervised learning: predict house price or something
+2. Learning theory: why learning algorithms work, how well they perform and how much data is needed
+to train the model
+3. Unsupervised learning: usually the first step of unsupervised learning is clustering. Can be applied
+to fields like image processing(even computer vision), audio processing(voice recognition), turmor 
+classification
+4. Reinforcement learning: reward function is used. Every time a good decision is made, there is a 
+reward. Otherwise, bad effects accumulates. It is only when the consequence of bad decisions is 
+worse enough that you can see obvious outcome. Like dog traning, how maximize good dog reward 
+and minimze bad dog punishment.
+
+
+Lecture 2
+Linear Regression: supervised learning algorithm
+
+basic learning process
+training set (as input)--> learning algorithm --> hypothesis (as output)
+
+To Design a Learning algorithm:
+1.design hypothesis representation, like linear function, square function etc
+
+Gradient Descent
+Normal Equations
