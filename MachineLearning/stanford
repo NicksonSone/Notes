@@ -8,7 +8,7 @@ Applications
 to train the model
 3. Unsupervised learning: usually the first step of unsupervised learning is clustering. Can be applied
 to fields like image processing(even computer vision), audio processing(voice recognition), turmor 
-classification
+classification.
 4. Reinforcement learning: reward function is used. Every time a good decision is made, there is a 
 reward. Otherwise, bad effects accumulates. It is only when the consequence of bad decisions is 
 worse enough that you can see obvious outcome. Like dog traning, how maximize good dog reward 
@@ -18,11 +18,28 @@ and minimze bad dog punishment.
 Lecture 2
 Linear Regression: supervised learning algorithm
 
-basic learning process
+Basic Learning Process
+Choose a hypothesis based on charateristic of data
 training set (as input)--> learning algorithm --> hypothesis (as output)
 
+Goal
+use this hypothesis to predict result of other data. Therefore, the prediction of training set 
+should be accurate. 
+On the training set, the square difference between prediction and actual outcome should be as 
+small as possible. If we have M training examples, it is to minimize the sum of M square difference.
+Usually, we add (1\2) before sum of square difference for math simplification later on.
+
 To Design a Learning algorithm:
-1.design hypothesis representation, like linear function, square function etc
+1. design hypothesis representation, like linear function, square function etc
+
+Learnging Process
+Goal: minimize sum of M square difference which is between prediction and actual value. sum --> S
+
+Prediction is, for now, comes from a linear function of which all the parameters is unknown.
+So the hypothesis is a function of all these parameters, theta. Denoting all thetas as a vector V,
+Now, S is a function of V.
+2. then it is learning algorithm's job to learn the parameter of the hypothesis
+3. there can be much more complex hypothesis than linear function
 
 Gradient Descent
 Normal Equations
