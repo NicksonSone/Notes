@@ -1,0 +1,113 @@
+Data Scientist Toolbox
+
+Week 1
+The person actually gets things done matters. 
+
+key challenge: problem solving, surplus or insufficient info
+
+surplus: filter out irrelevant info
+insufficient: go find more
+
+focus on questions with data you have
+
+Why data science
+data cheaper to collect, store. current trend Big Data: GPS data, gene
+statistics: to learn somthing
+
+This class focus on:
+hacking skills: R language, ability to answer question yourself
+math and statistics knowledge
+
+R important function
+access help file: ?rnorm <=> help.search("rnomr") in this case, correct name not necessary
+find arguments of a function: args("rnorm")
+
+lapply: takes a list, and a function and apply the function to each element in the list
+qplot
+
+How to ask R question
+1. steps taken to reproduce the problem
+2. the expected output
+3. the actual output
+4. version of packages you use
+5. the operating system
+
+How to ask data analysis question
+1. the question you r answering
+2. steps taken
+3. expected result
+4. actual outcome
+5. other solutions you think of
+
+forums: general questions
+StackOverflow: use tag "[r]"
+R mailing list: for software questions
+CrossValidated: for more general questions
+Google: "[data type] data analysis" or "[data type] R package"(better)
+
+Data science in different fields has different names:
+refer to lecture notes: findingAnswers.pdf
+
+Build R packages for others: links in buildingDataProducts.pdf
+RCharts: for marketing, links in lecture note
+
+R packages for machine learning: 
+
+
+Week 2
+
+Markdown Syntax 
+
+Introduction to markdown: http://daringfireball.net/projects/markdown/
+Headings: ## This is a secondary heading(first level title)
+	  ### This is a tertiary heading(second level)
+
+Unordered lists: * first item in list
+		 * second item in list
+
+
+Primary location for obtaining R packages is CRAN.
+For biological applications, many packages are available from Bioconductor Project.
+
+R Package Installation
+From CRAN (commands below are R functions)
+install.packages("slidify") 	(any dependent packages will also downloaded and installed.)
+install.packages(c("slidify", "ggplot2", "devtools"))
+
+From other source
+source("www.your/source/websit")
+bioLite()	(this line will load the packages from package websit, it will take a little time )
+bioLite(c("package", "name"))
+
+Usage
+to use package function, type 
+library(ggplot2) 	(ggplot2 is a library, do not put package name in qoutes)
+
+then all functions exported by that package will be attached to the top of search list
+type: search()
+
+
+Week 3
+Types of Data Science Questions
+1. descriptive: just describe the data, not interpretation!!! not making any decision
+2. exploratory: to disconver connections, but not the final say(no confirmation). should not 
+		be used for generalization and prediction. Correlation does not imply causation.
+3. inferential: extract a small population to study and use the result to infer a larger population.
+		It is the goal of statistical model. It involves quantity you care about and 
+		uncertainty about your estimate. Depends heavily on population and sampling scheme.
+4. predictive: X predicts Y does not mean X causes Y. To predict value.
+5. causal
+6. mechanistic
+
+The most important: questions to answer
+second most important: data 
+
+
+
+
+
+
+
+
+
+
