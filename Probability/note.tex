@@ -7,7 +7,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 
-\title{Test document }
+\title{Probability Notes}
 \author{Nickson Zhu  \\  \url{nicksonsone@gmail.com}}
 
 \begin{document}
@@ -16,31 +16,65 @@
 \newpage
 
 \chapter{Introduction to Probability}
-\section{Interpretation of Probability}
-	\subsection{The Frequency Interpretation of Probability}
+	\section{Interpretation of Probability}
+		\subsection{The Frequency Interpretation of Probability}
+			\subsubsection{Definition}
+			The probablity that some specific outcome of a process can be intrepreted to 
+			mean the relative frequency with which the outcome can be obtained if the 
+			process is repeated for a large number of times under similar conditions.  
 
-The probablity that some specific outcome of a process can be intrepreted to 
-mean the relative frequency with which the outcome can be obtained if the 
-process is repeated for a large number of times under similar conditions.  
+			\subsubsection{Example}
+			Toss coin for 1,000,000 times, number of heads is nearly 500,000, but may 
+			not exactly 500,000.
 
-\subsubsection{Example}
-Toss coin for 1,000,000 times, number of heads is nearly 500,000, but may 
-not exactly 500,000.
+			\subsubsection{Shortcoming} 
+			\begin{itemize}
+				\item number of tests: how large is enough 
+				\item similar conditions: conditions cannot be completely the same, otherwise always same outcome
+				\item frequency of outcomes: should approximate theoritical probablity, but no permissible variation
+				\item repetition: many important problems have no repetition. For instance, probablity of a aquaintance 
+			\end{itemize}
 
-\subsubsection{Shortcoming} 
-\begin{itemize}
-\item number of tests: how large is enough 
-\item similar conditions: conditions cannot be completely the same, otherwise always same outcome
-\item frequency of outcomes: should approximate theoritical probablity, but no permissible variation
-\item repetition: many important problems have no repetition. For instance, probablity of a aquaintance 
-\end{itemize}
+		\subsection{Classical Interpretation \& Subjective Interpretation}
+			\subsubsection{Classical}
+			Based on equally likely outcome.  Paradox: this concept is based on the 
+			probablity we are trying to define.  Example: six-sided dice, equally 1/6.
 
-\subsection{Classical Interpretation}
-\newpage
+			\subsubsection{Subjective}
+			Based on personal belief and information.  
 
-\subsection{Another subsection of the firs section}
+	\section{Experiments and Events}
+		\subsection{Definition}
+			\subsubsection{Experiment}
+			any process in which the possible outcomes can be identified.  
+			\subsubsection{Event}
+			a well-define set of possible outcomes of the experiment.  
 
-\section{The second section}
+		\subsection{Explanation}
+		Not every set of possible outcomes will be called an event.  The probability 
+		of an event will be how likely it is that the outcome is in the event.  
+
+	\section{Set Theory}
+		\subsection{Definiton}
+			\subsubsection{Set}
+			Collection of process outcomes of an experiment.  
+			\subsubsection{Empty Set}
+			Some events are impossible.  
+		
+			\subsubsection{Infinite set}
+			Infinitely many outcomes.  If countable, there 
+			is one-to-one correspondence.  If either finite or countable, 
+			a set has at most coutably many items.  
+
+		\subsection{Operations on Sets}
+			\subsubsection{Union of Sets}
+			If $A_1$, $A_2$, \ldots  are countable collection of events,then 
+			$\cup_{i=1}^{\infty}$ is also an event.  But $\cup_{i=1}^{\infty}$ 
+			does not necessarily have to be an event.  
+
+
+
+
 
 
 \begin{thebibliography}{9}
