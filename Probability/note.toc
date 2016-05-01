@@ -14,7 +14,13 @@
 \contentsline {subsection}{\numberline {1.2.2}Explanation}{6}{subsection.1.2.2}
 \contentsline {section}{\numberline {1.3}Set Theory}{6}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Definiton}{6}{subsection.1.3.1}
-\contentsline {subsubsection}{Empty Set}{6}{section*.9}
-\contentsline {subsubsection}{Infinite set}{6}{section*.10}
+\contentsline {subsubsection}{Set}{6}{section*.9}
+\contentsline {subsubsection}{Empty Set}{6}{section*.10}
+\contentsline {subsubsection}{Infinite set}{6}{section*.11}
 \contentsline {subsection}{\numberline {1.3.2}Operations on Sets}{6}{subsection.1.3.2}
-\contentsline {subsubsection}{Union of Sets}{6}{section*.11}
+\contentsline {subsubsection}{Union of Sets}{6}{section*.12}
+\contentsline {subsubsection}{Overlaps of Evnets}{6}{section*.13}
+\contentsline {subsubsection}{Useful Theorem}{7}{section*.14}
+\contentsline {section}{\numberline {1.4}Probability}{7}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Axioms}{7}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Theorems}{7}{subsection.1.4.2}

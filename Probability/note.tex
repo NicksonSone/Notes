@@ -1,11 +1,10 @@
 \documentclass{book}
 \usepackage{geometry}
 \usepackage{fancyhdr}
-\pagestyle{fancy}
-\cfoot{\thepage}
 \usepackage{amsmath, amsthm, amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\graphicspath{ {images/} }
 
 \title{Probability Notes}
 \author{Nickson Zhu  \\  \url{nicksonsone@gmail.com}}
@@ -72,9 +71,71 @@
 			$\cup_{i=1}^{\infty}$ is also an event.  But $\cup_{i=1}^{\infty}$ 
 			does not necessarily have to be an event.  
 
+			\subsubsection{Overlaps of Evnets}
+			Look at the pictures at page \pageref{fig:intersection_1}, 
+			if events are not disjoint, their union can be deduced from intersections.  
+			\begin{figure}[b]
+				\centering
+				\includegraphics[scale=0.5]{PartitionByTwo}
+				\caption{intersection of two events}
+				\label{fig:intersection_1}
+				\includegraphics[scale=0.5]{PartitionByThree}
+				\caption{intersection of three events}
+				\label{fig:intersection_2}
+			\end{figure}
 
+			\subsubsection{Useful Theorem}
+			\begin{align*}
+				A = (A \cap B) \cup (A \cap B^c) \\
+				A \cup B = B \cup (A \cap B^c) 
+			\end{align*}
 
+	\section{Probability}
+		\subsection{Axioms}
+		\begin{itemize}	
+			\item For every event $A$ ,  $ Pr(A)\geq0 $ 
+			\item $Pr(S) = 1$ 
+			\item For every infinite sequence of disjoint events
+				\[
+					Pr\bigg( \bigcup_{i=1}^\infty A_i \bigg) = \sum_{i=1}^\infty Pr(A_i)
+				\]
+			For finite sequence of disjoint events, equation above still holds
+		\end{itemize}
+			
+		\subsection{Theorems}
+		\begin{itemize}
+		\item For every two events A and B, $ Pr(A \cap B^c) = Pr(A) - Pr(A \cap B) $.  
+			\begin{align*}
+				\intertext{The reason is}
+				A = (A \cap B) \cup (A \cap B^c)
+				\intertext{According to Axiom 3, we have}
+				Pr(A) = Pr(A \cap B) + Pr(A \cap B^c)
+				\intertext{Therefore}
+				Pr(A \cap B) = Pr(A) - Pr(A \cap B^c)
+			\end{align*}
 
+		\item For every two events A and B, 
+			$ Pr(A \cup B) = Pr(A) + Pr(B) - Pr(A \cap B) $.  
+			\begin{align*}
+				A \cup B = B \cup (A \cap B^c) \\
+				Pr(A \cup B) = Pr(B) + Pr(A \cap B^c)
+				\intertext{From theorem above}
+				A = (A \cap B) \cup (A \cap B^c) \\
+				Pr(A) = Pr(A \cap B) + Pr(A \cap B^c) 
+				\intertext{Switch Pr(A) to the right}
+				Pr(A \cap B^c) = Pr(A) - Pr(A \cap B) 
+				\intertext{Finally}
+				Pr(A \cup B) = Pr(A) + Pr(B) - Pr(A \cap 
+			\end{align*}
+
+		\item Bonferroni Inequality.  For all events $A_1$,\ldots, $A_n$,	
+			\[
+				Pr(\bigcup_{i=1}^n A_i) \leq \sum_{i=1}^n Pr(A_i) \text{ and } 
+				Pr(\bigcap_{i=1^n A_i}) \leq 1 - \sum_{i=1}^n Pr(A_i^c)
+			\]
+
+		\end{itemize}
+	\section{Counting Methods}
 
 
 \begin{thebibliography}{9}
