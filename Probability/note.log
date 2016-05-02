@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.1)  29 APR 2016 11:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.1)  1 MAY 2016 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -412,41 +412,45 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
  [5]
-<images/PartitionByTwo.png, id=106, 262.9825pt x 154.5775pt>
+<images/PartitionByTwo.png, id=121, 262.9825pt x 154.5775pt>
 File: images/PartitionByTwo.png Graphic file (type png)
 
 <use images/PartitionByTwo.png>
 Package pdftex.def Info: images/PartitionByTwo.png used on input line 79.
 (pdftex.def)             Requested size: 131.49092pt x 77.28854pt.
 
-<images/PartitionByThree.png, id=107, 401.5pt x 341.275pt>
+<images/PartitionByThree.png, id=122, 401.5pt x 341.275pt>
 File: images/PartitionByThree.png Graphic file (type png)
 
 <use images/PartitionByThree.png>
 Package pdftex.def Info: images/PartitionByThree.png used on input line 82.
 (pdftex.def)             Requested size: 200.7495pt x 170.63707pt.
- [6] [7] [8] [9 <./images/PartitionByTwo.png> <./images/PartitionByThree.png>] 
-[10
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] [7 <./images/PartitionByTwo.png> <./images/PartitionByThree.png>] [8]
+[9] [10
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
  [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
  (./note.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 146.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
 Package rerunfilecheck Info: File `note.out' has not changed.
-(rerunfilecheck)             Checksum: 73FB209959D749D9668AE656E077D4D3;906.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
+(rerunfilecheck)             Checksum: 7491B8A0F25BD67619729C722C6C54F1;1107.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
  ) 
 Here is how much of TeX's memory you used:
- 6670 strings out of 495028
- 95175 string characters out of 6181498
+ 6676 strings out of 495028
+ 95267 string characters out of 6181498
  186174 words of memory out of 5000000
- 9756 multiletter control sequences out of 15000+600000
+ 9759 multiletter control sequences out of 15000+600000
  13583 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,8n,43p,237b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,43p,237b,406s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -461,10 +465,10 @@ l10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on note.pdf (11 pages, 183850 bytes).
+Output written on note.pdf (11 pages, 187969 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

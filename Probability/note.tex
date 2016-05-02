@@ -74,7 +74,7 @@
 			\subsubsection{Overlaps of Evnets}
 			Look at the pictures at page \pageref{fig:intersection_1}, 
 			if events are not disjoint, their union can be deduced from intersections.  
-			\begin{figure}[b]
+			\begin{figure}[h]
 				\centering
 				\includegraphics[scale=0.5]{PartitionByTwo}
 				\caption{intersection of two events}
@@ -104,7 +104,7 @@
 			
 		\subsection{Theorems}
 		\begin{itemize}
-		\item For every two events A and B, $ Pr(A \cap B^c) = Pr(A) - Pr(A \cap B) $.  
+			\item For every two events A and B, $ Pr(A \cap B^c) = Pr(A) - Pr(A \cap B) $.  
 			\begin{align*}
 				\intertext{The reason is}
 				A = (A \cap B) \cup (A \cap B^c)
@@ -136,6 +136,37 @@
 
 		\end{itemize}
 	\section{Counting Methods}
+		\subsection{Multiplication Rule}
+		\begin{itemize}
+			\item An experiment has $k(k \leq 2)$ parts, that the $i$th part has $n_i$ outcomes
+			\item The outcomes of each part is independent of each other 
+			\item The total number of possible outcomes is $n_1n_2\cdots n_k$.  
+		\end{itemize}
+
+		\subsection{Permutation}
+			\subsubsection{Sampling without Replacement}
+			Selecting $k$ elements from a set of $n$ at a time without 
+			replacement will be a permuation of $n$ elements taken $k$ at 
+			a time.  Denoted by $P_{n, k}$, be awared of $0! = 1$
+			\[
+				P_{n, k} = n(n-1)(n-2)\cdots(n-k+1) 
+			\]
+			Another form
+			\[
+				P_{n, k} = n(n-1)(n-2)\cdots(n-k+1)\frac{(n-k)(n-k-1)\cdots1}{(n-k)(n-k-1)\cdots1}
+					 = \frac{n!}{(n-k)!}
+			\]
+			When $ k=n $,
+			\[
+				P_{n, n} = n! 
+			\]
+
+			\subsubsection{Sampling with Replacement}
+			Make $k$ selections, all selections have $n$ outcomes.  
+			Pick a ball from $n$ for $k$ times, with each time putting the ball back.  
+			Suppose the outcome vector is $(x_1, x_2,\ldots,x_k)$, 
+			probability assigned to each vector is $\frac{1}{n^k}$
+
 
 
 \begin{thebibliography}{9}

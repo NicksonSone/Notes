@@ -23,4 +23,7 @@
 \contentsline {subsubsection}{Useful Theorem}{7}{section*.14}
 \contentsline {section}{\numberline {1.4}Probability}{7}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Axioms}{7}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Theorems}{7}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.2}Theorems}{8}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Counting Methods}{8}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Multiplication Rule}{8}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Permutation}{9}{subsection.1.5.2}
