@@ -9,7 +9,7 @@ what's better than original solution,
 solutions of other company, 
 richnes of online resource(how vibrate the community is)
 
-For database:
+# For database:
 connector(performance, availability of resources)
 cache, 
 read/write performance, 
@@ -24,21 +24,21 @@ ease of upgrade backup
 HTTP regulation suggest do not pass parameters in DELETE method.
 
 
-Model Relation
+# Model Relation
 
 After model design phase, some models must have some kind of relations to each other. Updates
 of one record could have unexpected impact on related data in other model. This influence must
 be taken into consideration.
 
 
-Functionality Conflicts 
+# Functionality Conflicts 
 
 two versions of api for the same functionality can have substantial impact on data model. If the 
 newer interface perform differently on data, data conflicts and contradicting diplaying rule may 
 occur. This is a very special case for two devices using different sets of api
 
 
-Software Implementation Scheduling
+# Software Implementation Scheduling
 
 Scheduling should be based on complexity of implementation and related functions, including 
 interaction between database and client side. Data in database usually support creatiion, update,
