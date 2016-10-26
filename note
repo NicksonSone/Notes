@@ -1,4 +1,4 @@
-Procedure to Deploy New Technology:
+# Procedure to Deploy New Technology:
 
 Never dive into details first. Estimate the usability: 
 clustering support, 
@@ -19,7 +19,7 @@ sharding(partitioning),
 ease of upgrade backup
 
 
-Http Delete Method
+# Http Delete Method
 
 HTTP regulation suggest do not pass parameters in DELETE method.
 
