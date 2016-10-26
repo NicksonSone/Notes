@@ -45,3 +45,4 @@ interaction between database and client side. Data in database usually support c
 query and delete on client side or operation system. Conflicts in data race ought to be fully 
 examined and considered
 
+$ \sum_{\forall i}{x_i^{2}} $
