@@ -56,10 +56,10 @@ Mean square error for regression
 Error rate for classification  
 ![ErrorRate][ErrorRate]
 
-**E.g.** Bayes error rate
-  Bayes probability:
-  ![BayesPro][BayesPro]
-  Error rate: the expectation averages the probability over all possible values of X.
+**E.g.** Bayes error rate  
+  Bayes probability:  
+  ![BayesPro][BayesPro]  
+  Error rate: the expectation averages the probability over all possible values of X.  
   ![BayesError][BayesError]
 
 
