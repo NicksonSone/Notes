@@ -50,15 +50,17 @@ Bagging, Boosting, SVM with non-linear kernels: least interpretable.
 * Semi-supervised: a total of n observations, with only m of them having response. To utilize this whole set to train a model.
 
 ## Estimation on Accuracy
-Mean square error for regression
+Mean square error for regression  
 ![MSE][MSE]
 
-Error rate for classification
+Error rate for classification  
 ![ErrorRate][ErrorRate]
 
 **E.g.** Bayes error rate
-  Bayes probability: ![BayesPro]
-  Error rate:![BayesError][BayesError]the expectation averages the probability over all possible values of X.
+  Bayes probability:
+  ![BayesPro][BayesPro]
+  Error rate: the expectation averages the probability over all possible values of X.
+  ![BayesError][BayesError]
 
 
 
