@@ -34,11 +34,13 @@ array transforms sequences of sequences into two-dimensional arrays, sequences o
 
 
 create arrays with initial placeholder content
+
     >>> np.zeros( (3,4) ) # creates an array full of zeros
     >>> np.ones( (2,3,4), dtype=np.int16 )  # creates an array full of ones
     >>> np.empty( (2,3) )  # create random numbers, depends on the state of the memory
 
 create sequences of numbers
+
     >>> np.arange( 10, 30, 5 ) # better used for integer
     array([10, 15, 20, 25])
     >>> np.linspace( 0, 2, 9 ) # for float, sepcify number of elements
@@ -48,6 +50,7 @@ For floating points, *np.arange* does **not guarantee the number of elements obt
 
 ### Printing
 If an array is too large to be printed, NumPy automatically skips the central part of the array and only prints the corners:
+
     >>> print(np.arange(10000))
     [   0    1    2 ..., 9997 9998 9999]
     >>> np.set_printoptions(threshold='nan')  # disable the skip
@@ -55,6 +58,7 @@ If an array is too large to be printed, NumPy automatically skips the central pa
 
 ### Basic operation
 Elementwise arithmetic operators, including * (multiplication). Use *dot* function for matrix product.
+
     >>> a = np.array( [20,30,40,50] )
     >>> b = np.arange( 4 )
     >>> a-b
@@ -65,9 +69,11 @@ Elementwise arithmetic operators, including * (multiplication). Use *dot* functi
     260
 
 += and \*=, modify existing array  
+
     >>> a \*= 3
 
 Unary operations
+
     >>> a.sum()
     2.5718191614547998
     >>> a.min()
