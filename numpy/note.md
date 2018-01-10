@@ -111,6 +111,14 @@ array([ 1, 11, 21, 31, 41])
 array([[10, 11, 12, 13],
        [20, 21, 22, 23]])
 ```
+The basic slice syntax is `i:j:k` where i is the starting index, `j` is the stopping index, and k is the step (`k!=0`). 
+```Python
+>>> x[1:7:2]
+array([1, 3, 5])
+>>> x[-3:3:-1]
+array([7, 6, 5, 4])
+```
+
 The dots (...) represent as many colons as needed to produce a complete indexing tuple
 * ```x[1,2,...]``` is equivalent to ```x[1,2,:,:,:]```,
 * ``x[...,3]`` to ``x[:,:,:,:,3]`` and
@@ -279,7 +287,7 @@ array_split: split an array along any axis
 >>> b is a           # a and b are two names for the same ndarray object
 True
 ```
-3. creating a view or **slicing an array, makes new object, but shares data**
+3. **creating a view, slicing an array, tansposing, reshaping etc**, makes new object, but **shares data**
 ```Python
 >>> a = np.arange(12)
 >>> c = a.view()
